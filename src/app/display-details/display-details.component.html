@@ -1,0 +1,14 @@
+<button class="btn btn-primary" (click)="onToggleButton()">
+  Display Details
+</button>
+<ul *ngIf="paragraphVisible">
+  <li
+    *ngFor="let item of paragraphs; let i = index"
+    [ngStyle]="{
+      backgroundColor: i >= 4 ? 'Blue' : ''
+    }"
+    [ngClass]="{ textColor: i >= 4 }"
+  >
+    {{ item }} {{ i + 1 }}
+  </li>
+</ul>

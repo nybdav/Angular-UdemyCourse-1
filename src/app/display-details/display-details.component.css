@@ -1,0 +1,12 @@
+.textColor {
+  color: white;
+}
+
+ul {
+  margin-left: -35px;
+  margin-top: 10px;
+}
+
+li {
+  list-style: none;
+}
